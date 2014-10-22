@@ -1,0 +1,14 @@
+{
+  "name": "taxi-tarif",
+  "version": "0.0.0",
+  "description": "Based on http://www.economie.gouv.fr/dgccrf/Publications/Vie-pratique/Fiches-pratiques/Taxi-une-profession-r%C3%A9glement%C3%A9e",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "google-distance": "^0.2.1"
+  }
+}

@@ -1,0 +1,50 @@
+# Taxi-tarif
+
+Based on http://www.economie.gouv.fr/dgccrf/Publications/Vie-pratique/Fiches-pratiques/Taxi-une-profession-r%C3%A9glement%C3%A9e
+
+price_min = 6.86
+
+zones = ['paris', 'suburb', 'province']
+
+Inputs :
+numberOfPassengers
+numberOfBags (more than 5 kilos)
+
+departureTime
+departureDate
+departureAddress
+destinationAddress
+
+distance
+
+tarifs{
+    'paris': {
+        "A": {
+            'kmRate':1.04
+            'hourRate':32.25
+        },
+        "B": {
+            'kmRate':1.29
+            'hourRate':37.40
+        },
+        "C": {
+            'kmRate':1.56
+            'hourRate':33.46
+        }
+    },
+    'suburb': {
+        "B": {
+            'kmRate':1.29
+            'hourRate':37.40
+        },
+        "C": {
+            'kmRate':1.56
+            'hourRate':33.46
+        }
+    }
+}
+
+zone_in == paris
+    initial_fee = 3.79;
+    passengers == 4 => price += 3.12
+    numberOfBags > 1 => price += (numberOfBags-1)*1.04
